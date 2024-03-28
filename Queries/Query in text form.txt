@@ -1,0 +1,30 @@
+Query1
+create database BelgiumCampus;
+
+Query2
+Use BelgiumCampus;
+create table Students(
+StudentNumber int not null,
+Name varchar(255),
+Surname varchar(255),
+DateOfBirth date,
+Gender varchar(255),
+phone varchar(255),
+Address varchar(255),
+CourseCode varchar(255)
+);
+
+Query3
+Use BelgiumCampus;
+create table Course(
+CourseCode varchar(255) not null,
+CourseName varchar(255),
+Description varchar(255)
+);
+
+Query4
+Use BelgiumCampus;
+insert into Course values
+('BIT','Bachelor of Information Technology','NQF level 7, 3 year course no internship'),
+('BCom','Bachelor of Computing','NQF level 8, 3 years of school and 1 year internship'),
+('Dip','Diploma of Information Technology','NQF level 6, 2 years 6 months of school and 6 months of internship')
